@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages — Voya Travel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .includes-list { list-style: none; padding: 0; margin: 14px 0; }
+    .includes-list li {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .includes-list li::before { content: '✓'; color: var(--accent); font-size: 0.75rem; }
+    .featured-pkg {
+      background: linear-gradient(135deg, rgba(200,169,110,0.08), rgba(126,184,212,0.06));
+      border: 1px solid rgba(200,169,110,0.35);
+    }
+    .pkg-tag-featured {
+      position: absolute;
+      top: 16px; right: 16px;
+      background: var(--grad);
+      color: #0a0a0f;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">Voya<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <div class="breadcrumb-custom mb-3">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span style="color:var(--text-main);">Packages</span>
+      </div>
+      <h1 class="page-title">Travel <em style="font-style:italic;color:var(--accent)">Packages</em></h1>
+      <p style="color:var(--text-muted);max-width:500px;font-size:0.95rem;margin-top:12px;">All-inclusive itineraries — flights, hotels, guides, and unforgettable moments.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+
+      <!-- budget tiers -->
+      <div class="row mb-5 fade-up">
+        <div class="col-12">
+          <span class="section-tag">Choose Your Journey</span>
+          <h2 class="section-title">Packages for <em>Every Traveler</em></h2>
+          <div class="gold-line"></div>
+        </div>
+      </div>
+
+      <!-- ROW 1 -->
+      <div class="row g-4 mb-4">
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="pkg-card position-relative">
+            <div class="pkg-img">
+              <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600" alt="European Grand Tour">
+            </div>
+            <span class="pkg-tag-featured">⭐ Best Seller</span>
+            <div class="pkg-body">
+              <span class="pkg-badge">Multi-Country</span>
+              <h4 class="pkg-title">European Grand Tour</h4>
+              <p class="pkg-desc">Paris, Rome, Amsterdam & Prague in one seamless journey through Europe's most iconic cities.</p>
+              <ul class="includes-list">
+                <li>Flights from London included</li>
+                <li>4-star boutique hotels</li>
+                <li>Private guided tours</li>
+                <li>Airport transfers</li>
+              </ul>
+              <div class="pkg-footer">
+                <div class="pkg-price"><span>$3,490</span><small>per person</small></div>
+                <span class="pkg-dur">📅 14 days</span>
+              </div>
+              <a href="contact.html" class="btn-primary-custom mt-3 d-block text-center" style="font-size:0.85rem;padding:12px;">Book This Package</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="pkg-card">
+            <div class="pkg-img">
+              <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?w=600" alt="Southeast Asia Explorer">
+            </div>
+            <div class="pkg-body">
+              <span class="pkg-badge">Adventure</span>
+              <h4 class="pkg-title">Southeast Asia Explorer</h4>
+              <p class="pkg-desc">Thailand, Vietnam, and Cambodia — temples, street food, and landscapes that will stay with you forever.</p>
+              <ul class="includes-list">
+                <li>Return flights included</li>
+                <li>Mix of hotels & guesthouses</li>
+                <li>Local expert guides</li>
+                <li>Cooking class experience</li>
+              </ul>
+              <div class="pkg-footer">
+                <div class="pkg-price"><span>$2,190</span><small>per person</small></div>
+                <span class="pkg-dur">📅 12 days</span>
+              </div>
+              <a href="contact.html" class="btn-outline-custom mt-3 d-block text-center" style="font-size:0.85rem;padding:11px;">Book This Package</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="pkg-card">
+            <div class="pkg-img">
+              <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600" alt="Amalfi Coast">
+            </div>
+            <div class="pkg-body">
+              <span class="pkg-badge">Luxury</span>
+              <h4 class="pkg-title">Amalfi Coast Escape</h4>
+              <p class="pkg-desc">Cliffside villages, private boats, and Michelin-starred dining along Italy's most dramatic coastline.</p>
+              <ul class="includes-list">
+                <li>Business class flights</li>
+                <li>5-star cliff hotels</li>
+                <li>Private boat hire</li>
+                <li>Fine dining reservations</li>
+              </ul>
+              <div class="pkg-footer">
+                <div class="pkg-price"><span>$4,890</span><small>per person</small></div>
+                <span class="pkg-dur">📅 9 days</span>
+              </div>
+              <a href="contact.html" class="btn-outline-custom mt-3 d-block text-center" style="font-size:0.85rem;padding:11px;">Book This Package</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW 2 -->
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="pkg-card">
+            <div class="pkg-img">
+              <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600" alt="African Safari">
+            </div>
+            <div class="pkg-body">
+              <span class="pkg-badge">Wildlife</span>
+              <h4 class="pkg-title">African Safari Dream</h4>
+              <p class="pkg-desc">Kenya & Tanzania — witness the Great Migration and sleep under the African stars in luxury lodges.</p>
+              <ul class="includes-list">
+                <li>Return flights included</li>
+                <li>Luxury safari lodges</li>
+                <li>Daily game drives</li>
+                <li>All meals included</li>
+              </ul>
+              <div class="pkg-footer">
+                <div class="pkg-price"><span>$5,200</span><small>per person</small></div>
+                <span class="pkg-dur">📅 10 days</span>
+              </div>
+              <a href="contact.html" class="btn-outline-custom mt-3 d-block text-center" style="font-size:0.85rem;padding:11px;">Book This Package</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="pkg-card">
+            <div class="pkg-img">
+              <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=600" alt="South America">
+            </div>
+            <div class="pkg-body">
+              <span class="pkg-badge">Cultural</span>
+              <h4 class="pkg-title">South America Discovery</h4>
+              <p class="pkg-desc">Peru, Bolivia, and Argentina — ancient civilisations, salt flats, and Patagonian wilderness.</p>
+              <ul class="includes-list">
+                <li>Internal flights included</li>
+                <li>3 & 4-star hotels</li>
+                <li>Machu Picchu guided trek</li>
+                <li>Spanish phrases guide</li>
+              </ul>
+              <div class="pkg-footer">
+                <div class="pkg-price"><span>$3,890</span><small>per person</small></div>
+                <span class="pkg-dur">📅 15 days</span>
+              </div>
+              <a href="contact.html" class="btn-outline-custom mt-3 d-block text-center" style="font-size:0.85rem;padding:11px;">Book This Package</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="pkg-card">
+            <div class="pkg-img">
+              <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600" alt="Morocco Desert">
+            </div>
+            <div class="pkg-body">
+              <span class="pkg-badge">Short Break</span>
+              <h4 class="pkg-title">Moroccan Desert Escape</h4>
+              <p class="pkg-desc">Marrakech medinas, Atlas Mountains, and sleeping in a Sahara desert camp under infinite stars.</p>
+              <ul class="includes-list">
+                <li>Return flights from UK</li>
+                <li>Riad accommodation</li>
+                <li>Desert camp night</li>
+                <li>Camel trek included</li>
+              </ul>
+              <div class="pkg-footer">
+                <div class="pkg-price"><span>$1,380</span><small>per person</small></div>
+                <span class="pkg-dur">📅 6 days</span>
+              </div>
+              <a href="contact.html" class="btn-outline-custom mt-3 d-block text-center" style="font-size:0.85rem;padding:11px;">Book This Package</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CUSTOM PACKAGE CTA -->
+  <section style="padding: 80px 0;">
+    <div class="container">
+      <div class="glass-card text-center fade-up" style="max-width: 680px; margin: 0 auto;">
+        <p style="font-size: 2rem; margin-bottom: 16px;">✈️</p>
+        <span class="section-tag" style="display:block;margin-bottom:8px;">Custom Packages</span>
+        <h3 class="section-title" style="font-size:1.8rem;margin-bottom:12px;">Want Something <em>Tailored?</em></h3>
+        <p class="section-sub mx-auto mb-4">Don't see what you're looking for? We build completely bespoke itineraries from scratch. Just tell us your dream trip.</p>
+        <a href="contact.html" class="btn-primary-custom">Request Custom Package</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-brand">Voya.</a>
+          <p class="footer-desc">We believe travel is the best way to understand the world. Let us help you do it properly.</p>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <p class="footer-heading">Contact</p>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@voyatravel.com">hello@voyatravel.com</a></li>
+            <li><a href="tel:+447911123456">+44 7911 123456</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Voya Travel. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Twitter">tw</a>
+          <a href="#" aria-label="Facebook">fb</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
